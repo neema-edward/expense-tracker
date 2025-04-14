@@ -9,9 +9,9 @@ function Form ({submitFunction}) {
                 <input name="expense" type="text" placeholder="Enter Expense Name" required/><br /><br />
                 <input name="description" type="text" placeholder="Enter Expense Description" required/><br /><br />
                 <input name="category" type="text"placeholder="Enter Expense Category" required/><br /><br />
-                <input name="amount" type="amount" placeholder="Enter amount"required/><br /><br />
+                <input name="amount" type="number" placeholder="Enter amount"required/><br /><br />
                 <input name="date" type="date" required/><br /><br />
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
