@@ -2,7 +2,7 @@ import React from "react";
 
 function Form ({submitFunction}) {
     return (
-        <div>
+        <div style={{flex: 1, marginRight: "20px"}}>
             <form id="exp-form" onSubmit={submitFunction}>
                 <h2 id="formh">Add Expense</h2>
                 <p>Enter your expense details below</p>
