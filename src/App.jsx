@@ -18,16 +18,12 @@ function App() {
       amount: formData.get("amount"),
       date: formData.get("date"),
     };
-
-     expenseObject = {
-      'expense': expense,
-      'description': description,
-      'category': category,
-      'amount': amount,
-      'date': date,
-    };
-    console.log(expenseObject);
+    setExpenses([...expenses, expense]);
+    event.target.reset();
   }
+
+  
+
   return (
     <div>
       <Header />
