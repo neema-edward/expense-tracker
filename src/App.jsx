@@ -22,11 +22,30 @@ function App() {
     event.target.reset();
   }
 
-  
+  function handleSearch(event) {
+    setSearchTerm(event.target.value)
+  }
+
+  const filteredExpenses = expenses
+    .filter((exp) =>
+      exp.expense.toLowerCase().includes(searchTerm.toLowerCas())
+  )
+  .sort((a,b) => a.expense.localeCOmpare(b.expense) )
 
   return (
     <div>
       <Header />
+      <div style={{display: "flex", justifyContent: "space-between"}}>
+        <div>
+          <h2>Search Expenses</h2>
+          <input 
+          type="text"
+          placeholder="search expenses" 
+          value={searchTerm}
+          onChange={handleSearch}
+          />
+        </div>
+      </div>
       <Form submitFunction={handleSubmit} />
       <Table objectName = {expenseObject} />
     </div>
