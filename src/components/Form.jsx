@@ -1,16 +1,16 @@
 import React from "react";
 
-function Form () {
+function Form ({submitFunction}) {
     return (
         <div>
-            <form id="exp-form">
-                <h2>Add Expense</h2>
+            <form id="exp-form" onSubmit={submitFunction}>
+                <h2 id="formh">Add Expense</h2>
                 <p>Enter your expense details below</p>
-                <input name="expense" type="text" placeholder="Enter Expense Name"/><br /><br />
-                <input name="description" type="text" placeholder="Enter Expense Description"/><br /><br />
-                <input name="category" type="text"placeholder="Enter Expense Category" /><br /><br />
-                <input name="amount" type="amount" placeholder="Enter amount"/><br /><br />
-                <input name="date" type="date" /><br /><br />
+                <input name="expense" type="text" placeholder="Enter Expense Name" required/><br /><br />
+                <input name="description" type="text" placeholder="Enter Expense Description" required/><br /><br />
+                <input name="category" type="text"placeholder="Enter Expense Category" required/><br /><br />
+                <input name="amount" type="amount" placeholder="Enter amount"required/><br /><br />
+                <input name="date" type="date" required/><br /><br />
                 <button>Submit</button>
             </form>
         </div>

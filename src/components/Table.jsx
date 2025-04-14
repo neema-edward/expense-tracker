@@ -1,7 +1,7 @@
 import React from "react";
 import Expense from "./Expenses";
 
-function Table () {
+function Table ({objectName}) {
     return (
         <div>
             <table>
@@ -12,7 +12,7 @@ function Table () {
                     <th>Amount</th>
                     <th>Date</th>
                 </tr>
-                <Expense/>
+                <Expense Expenses={objectName}/>
             </table>
         </div>
     )

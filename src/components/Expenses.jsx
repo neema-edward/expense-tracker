@@ -1,14 +1,16 @@
 import React from "react";
 
-function Expense () {
+function Expense({Expenses}) {
     return (
+        <tbody>
             <tr>
-                    <td>Smocha</td>
-                    <td>Chapati & Smokie</td>
-                    <td>Food</td>
-                    <td>Ksh. 60</td>
-                    <td>14/04/2025</td>
-                </tr>
+                <td>{Expenses.expense}</td>
+                <td>{Expenses.description}</td>
+                <td>{Expenses.category}</td>
+                <td>{Expenses.amount}</td>
+                <td>{Expenses.date}</td>
+            </tr>
+        </tbody>
     )
 }
 

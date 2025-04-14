@@ -1,0 +1,134 @@
+/* App.css */
+/* Styles for the entire Expense Tracker */
+
+/* Main app container */
+.app {
+    max-width: 800px; /* Keep content centered and not too wide */
+    margin: 20px auto; /* Center with top/bottom margin */
+    padding: 20px; /* Inner spacing */
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Header (from Header.jsx) */
+  h1 {
+    text-align: center;
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger title */
+  }
+  
+  /* Form (from Form.jsx) */
+  #expform {
+    background-color: white; /* White form background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd; /* Light border */
+  }
+  
+  #expform h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  #expform p {
+    color: #666; /* Gray text */
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+  }
+  
+  #expform label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  #expform input {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit input width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  #expform input:focus {
+    outline: none;
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); /* Green glow */
+  }
+  
+  #expform button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  #expform button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Search input (in App.jsx) */
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Table (from Table.jsx) */
+  .expense-table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Round corners properly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expense-table th,
+  .expense-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .expense-table th {
+    background-color: #f4f4f4; /* Light gray header */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .expense-table td {
+    color: #555;
+  }
+  
+  .expense-table tr:last-child td {
+    border-bottom: none; /* No border on last row */
+  }
+  
+  .expense-table tr:hover {
+    background-color: #f9f9f9; /* Highlight row on hover */
+  }
