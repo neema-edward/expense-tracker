@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import Table from "./components/Table";
+import ".App.css";
 
 function App() {
   const [expenses, setExpenses] = useState([]);
@@ -33,7 +34,7 @@ function App() {
   .sort((a,b) => a.expense.localeCOmpare(b.expense) )
 
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <div style={{display: "flex", justifyContent: "space-between"}}>
         <div>
@@ -46,7 +47,9 @@ function App() {
           />
         </div>
       </div>
+      <div className="form-search-container">
       <Form submitFunction={handleSubmit} />
+      </div>
       <Table objectName = {expenseObject} />
     </div>
   )
